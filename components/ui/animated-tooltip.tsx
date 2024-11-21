@@ -9,15 +9,17 @@ import {
   useSpring,
 } from "framer-motion";
 
-export const AnimatedTooltip = ({
-  items,
-}: {
+interface AnimatedTooltipProps {
   items: {
     id: number;
     name: string;
     designation: string;
     image: string;
   }[];
+}
+
+export const AnimatedTooltip: React.FC<AnimatedTooltipProps> = ({
+  items,
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const springConfig = { stiffness: 100, damping: 5 };
@@ -39,7 +41,7 @@ export const AnimatedTooltip = ({
 
   return (
     <>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <div
           className="-mr-4  relative group"
           key={item.name}
