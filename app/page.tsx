@@ -97,7 +97,7 @@ export default function Home() {
             </h1>
             <div className="flex flex-row items-center justify-left mb-10 ml-10 mt-5 w-full">
               <AnimatedTooltip items={cs} />
-              <AnimatedTooltip items={maths} />
+              <AnimatedTooltip items={maths}/>
             </div>
             <div className="flex flex-row items-center justify-center mb-10 ml-10 mt-5 w-full">
               
