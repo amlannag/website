@@ -95,8 +95,12 @@ export default function Home() {
             <h1 className="ml-10 mt-10 md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold mt-0">
               Amlan Nag
             </h1>
-            <div className="flex flex-row items-center justify-center mb-10 w-full">
-            <AnimatedTooltip items={cs} />
+            <div className="flex flex-row items-center justify-left mb-10 ml-10 mt-5 w-full">
+              <AnimatedTooltip items={cs} />
+              <AnimatedTooltip items={maths} />
+            </div>
+            <div className="flex flex-row items-center justify-center mb-10 ml-10 mt-5 w-full">
+              
             </div>
           </div>
         </div>
