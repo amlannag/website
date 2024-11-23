@@ -49,11 +49,11 @@ export default function Home() {
         <div className="max-w-4xl flex items-top relative">
           <div className="items-top">
             <Image
-              src="/image.png" 
+              src="/image.jpg" 
               alt="Amlan Nag"
               width={350}
               height={350}
-              className="object-cover p-4 rounded-full mt-4"
+              className="object-cover rounded-full mt-4 border-2 border-white"
             />
             <div className="flex space-x-6 mt-4 justify-left ml-5">
             {/* LinkedIn Icon */}
