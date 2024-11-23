@@ -41,12 +41,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-lg md:text-4xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Past experiences
         </h2>
-        <p className="text-neutral-300 dark:text-neutral-300 text-xl md:text-base max-w-3xl">
+        <p className="text-neutral-300 dark:text-neutral-300 text-2xl  mb-0 md:text-xl max-w-5xl">
           Here is a timeline of someone the cool things I have done recently. For more information on please visit my projects or work experiece tab.
         </p>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl -mt-2 mx-auto pb-10">
         {data.map((item, index) => (
           <div
             key={index}

@@ -5,6 +5,38 @@ import Image from 'next/image';
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { Timeline } from "@/components/ui/timeline";
 import { PinContainer } from "@/components/ui/3d-pin";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { Button } from "@/components/ui/moving-border";
+
+const scrollToContact = () => {
+  const contactSection = document.getElementById("contact-section");
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const AceternityLogo = () => {
+  return (
+    <svg
+      width="66"
+      height="65"
+      viewBox="0 0 66 65"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-3 w-3 text-white white:text-white"
+    >
+      <path
+        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
+        stroke="currentColor"
+        strokeWidth="15"
+        strokeMiterlimit="3.86874"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};
+
+
 
 
 const data = [
@@ -351,18 +383,38 @@ export default function Home() {
               <AnimatedTooltip items={cs} />
               <AnimatedTooltip items={maths} />
             </div>
-            <p className="ml-11 text-lg text-gray-500 font-sans font-medium max-w-xl mb-10">
-              Hi! I am Amlan Nag, a Machine Learning and Statistics student who
-              is passionate about robotics, quantitative finance, and research.
-              I am always looking to build new, cool things. Please reach out if
-              you would like to collaborate!
-            </p>
-          </div>
+              <p className="ml-11 text-lg text-gray-500 font-sans font-medium max-w-xl mb-10">
+                Hi! I am Amlan Nag, a Machine Learning and Statistics student who
+                is passionate about robotics, quantitative finance, and research.
+                I am always looking to build new, cool things. Please reach out if
+                you would like to collaborate!
+              </p> 
+              <div>
+              <Button
+                borderRadius="1.75rem"
+                className="bg-grey dark:bg-slate-900 text-white font-bold border-neutral-800 dark:border-slate-900"
+                onClick={scrollToContact}
+              >
+                Contact Me!
+              </Button>
+            </div>
+            </div>
+            
         </div>
+    
       </div>
       <div className="w-full">
         <Timeline data={data} />
       </div>
+      <div
+        id="contact-section"
+        className="w-full text-center py-10 bg-neutral-900 text-white"
+      >
+        <h2 className="text-2xl font-bold">Let's get in touch!</h2>
+        <p className="text-sm mt-2">Phone: 123-456-7890</p>
+        <p className="text-sm">Email: contact@example.com</p>
+      </div>
     </div>
   );
 }
+
