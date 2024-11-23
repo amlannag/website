@@ -18,7 +18,7 @@ const scrollToContact = () => {
     }
 };
 
-export const Spacer = ({ height = "100px" }: { height?: string }) => {
+const Spacer = ({ height = "100px" }: { height?: string }) => {
   return <div style={{ height }} />;
 };
 
@@ -342,7 +342,7 @@ export default function Home() {
             href="/experience"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
-            Experience
+            Work Experience and Education
           </Link>
           <Link
             href="/contact"
