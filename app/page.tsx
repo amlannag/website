@@ -8,12 +8,46 @@ import { PinContainer } from "@/components/ui/3d-pin";
 import { Button } from "@/components/ui/moving-border";
 
 const scrollToContact = () => {
-  const contactSection = document.getElementById("contact-section");
-  if (contactSection) {
-    contactSection.scrollIntoView({ behavior: "smooth" });
-  }
+  const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
 };
 
+export const Spacer = ({ height = "100px" }: { height?: string }) => {
+  return <div style={{ height }} />;
+};
+
+const handleContactClick = () => {
+  const contactSection = document.getElementById('contact-section');
+  if (!contactSection) return;
+
+  const startPosition = window.pageYOffset;
+  const targetPosition = contactSection.offsetTop;
+  const distance = targetPosition - startPosition;
+  const duration = 2000; // Duration in milliseconds (2 seconds - adjust this to change speed)
+  let start: number | null = null;
+
+  function animation(currentTime: number) {
+    if (start === null) start = currentTime;
+    const timeElapsed = currentTime - start;
+    const progress = Math.min(timeElapsed / duration, 1);
+
+    // Easing function for smoother animation
+    const ease = (t: number) => t * t * t; // Cubic easing
+
+    window.scrollTo(0, startPosition + distance * ease(progress));
+
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animation);
+    }
+  }
+
+  requestAnimationFrame(animation);
+};
 
 const data = [
   {
@@ -292,19 +326,32 @@ export default function Home() {
       <header className="w-full fixed top-0 left-0 flex justify-end p-4 z-50">
         <nav className="flex space-x-6">
           <a
-            href="/blog"
+            href="/"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
-            Blog
+            Home
           </a>
           <a
-            href="/publications"
+            href="/projects"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
-            Publications
+            Projects
+          </a>
+          <a
+            href="/experience"
+            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
+          >
+            Experience
+          </a>
+          <a
+            href="/contact"
+            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
+          >
+            Contact
           </a>
         </nav>
       </header>
+
 
       {/* Main Content with higher z-index */}
       <div className="max-w-4xl mx-auto p-4 mt-16 flex flex-col z-10 relative">
@@ -382,15 +429,9 @@ export default function Home() {
       <div className="w-full">
         <Timeline data={data} />
       </div>
-      <div
-        id="contact-section"
-        className="w-full text-center py-10 bg-neutral-900 text-white"
-      >
-        <h2 className="text-2xl font-bold">Let's get in touch!</h2>
-        <p className="text-sm mt-2">Phone: 123-456-7890</p>
-        <p className="text-sm">Email: contact@example.com</p>
-      </div>
+      <Spacer height="200px" />
     </div>
   );
 }
+
 
