@@ -13,7 +13,7 @@ const data = [
     content: (
       <div>
         <h3 className="text-lg md:text-2xl mb-10 text-white dark:text-white max-w-4xl font-bold">
-          Work and Project
+          Blunge and Robotics
         </h3>
         <div className="grid grid-cols-2 justify-start">
           <PinContainer
@@ -80,7 +80,36 @@ const data = [
         <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Participated in the Lab Accelerator as a software engineer for Fortus, where I contributed to building the frontend and backend of their gym app.
         </p>
+        <div className="grid grid-cols-2 mt-0">
+          <PinContainer
+            title="Fortus App"
+            href="https://www.fortus.fit/"
+          >
+            <div className="flex  flex-col p-3 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[15rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+               Fortus App
+              </h3>
+              <div className=" w-full rounded-lg mt-4 ">
+                <Image
+                  src="/Fortus.png"
+                  alt="startup template"
+                  width={400}
+                  height={400}
+                  className="rounded-lg  h-16 md:h-32 lg:h-40 w-full "
+                />
+              </div>
+            </div>
+          </PinContainer>
+          <Image
+              src="/IMG_8240.jpg"
+              alt="startup template"
+              width={400}
+              height={400}
+              className="rounded-lg object-cover h-20 md:h-44 mt-11 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+        </div>
       </div>
+      
     ),
   },
   {
@@ -116,10 +145,39 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Placed Top 1% in IMC Prosperity Globally
         </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-0">
           My team and I placed in the top 1% out of 13,000 students globally in the IMC Annual Trading Challenge. In this challenge, we analyzed market data from a wide range of agents and products to curate profitable trading strategies.
         </p>
+        <div className="grid grid-cols-2 mt-0">
+          <PinContainer
+            title="GitHub Repository"
+            href="https://github.com/maxtownson/IMC_Prosperity_2"
+          >
+            <div className="flex  flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[15rem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+               IMC Git Hub Repository 
+              </h3>
+              <div className=" w-full rounded-lg mt-4 ">
+                <Image
+                  src="/imc-vector-logo.png"
+                  alt="startup template"
+                  width={400}
+                  height={400}
+                  className="rounded-lg  h-16 md:h-32 lg:h-40 w-full "
+                />
+              </div>
+            </div>
+          </PinContainer>
+          <Image
+              src="/tdfinal.png"
+              alt="startup template"
+              width={400}
+              height={400}
+              className="rounded-lg object-cover h-20 md:h-44 mt-11 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+        </div>
       </div>
+      
     ),
   },
   {
@@ -132,6 +190,22 @@ const data = [
         <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Decided to exit MyIBTutor to direct more attention toward technology and machine learning. Over the year, my co-founder and I grew the team to over 30 tutors and taught more than 300 concurrent students. We also partnered with several schools across Queensland to deliver workshops on pedagogy and time management.
         </p>
+        <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/1710899712049.jpeg"
+              alt="startup template"
+              width={400}
+              height={400}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/1710899761892.jpeg"
+              alt="startup template"
+              width={400}
+              height={400}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
       </div>
     ),
   },
