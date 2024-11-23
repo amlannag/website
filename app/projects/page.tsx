@@ -38,7 +38,7 @@ export default function ProjectsPage() {
           <div>
             <h1 className="text-4xl font-bold text-white mb-4">Projects</h1>
             <p className="text-xl text-gray-400">
-              Here are some of the projects I've worked on.
+              Here are some of the projects I&apos;ve worked on.
             </p>
           </div>
 

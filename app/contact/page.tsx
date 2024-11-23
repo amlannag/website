@@ -38,7 +38,7 @@ export default function ContactPage() {
           <div>
             <h1 className="text-4xl font-bold text-white mb-4">Get in Touch</h1>
             <p className="text-xl text-gray-400">
-              Let's connect! Feel free to reach out for opportunities or just to say hello.
+              I&apos;m always looking to build. Let's connect! Feel free to reach out for opportunities or just to say hello.
             </p>
           </div>
 
