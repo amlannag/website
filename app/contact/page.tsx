@@ -1,35 +1,36 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-black">
       <header className="w-full fixed top-0 left-0 flex justify-end p-4 z-50">
         <nav className="flex space-x-6">
-          <a
+          <Link
             href="/"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/projects"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
             Projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="/experience"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
             Experience
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
             Contact
-          </a>
+          </Link>
         </nav>
       </header>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">

@@ -6,6 +6,7 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { Timeline } from "@/components/ui/timeline";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { Button } from "@/components/ui/moving-border";
+import Link from "next/link";
 
 const scrollToContact = () => {
   const contactSection = document.getElementById('contact-section');
@@ -325,30 +326,30 @@ export default function Home() {
       {/* Header with higher z-index */}
       <header className="w-full fixed top-0 left-0 flex justify-end p-4 z-50">
         <nav className="flex space-x-6">
-          <a
+          <Link
             href="/"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/projects"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
             Projects
-          </a>
-          <a
+          </Link>
+          <Link
             href="/experience"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
             Experience
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
           >
             Contact
-          </a>
+          </Link>
         </nav>
       </header>
 
