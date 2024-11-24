@@ -18,7 +18,7 @@ export default function ContactPage() {
               Let&apos;s <Cover>Build</Cover> Something!
             </h1>
             <p className="text-3xl text-gray-400">
-              Let's connect! Feel free to reach out for opportunities or just to say hello.
+              Let&apos;s connect! Feel free to reach out for opportunities or just to say hello.
             </p>
             <p className="text-2xl text-gray-400 mt-5">
               amlannag12@gmail.com

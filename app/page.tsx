@@ -8,6 +8,7 @@ import { PinContainer } from "@/components/ui/3d-pin";
 import { Button } from "@/components/ui/moving-border";
 import Header from "@/components/ui/header";
 import { useRouter } from 'next/navigation';
+import Tags from '@/components/ui/tags';
 
 const Spacer = ({ height = "100px" }: { height?: string }) => {
   return <div style={{ height }} className="bg-neutral-900" />;
@@ -85,14 +86,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Fortus - Software Engineer
         </h3>
-        <div className="flex gap-2 mb-5">
-          <span className="px-3 py-1 bg-blue-500/10 text-blue-500 rounded-full text-sm">
-            React
-          </span>
-          <span className="px-3 py-1 bg-green-500/10 text-green-500 rounded-full text-sm">
-            Node.js
-          </span>
-        </div>
+        <Tags tags={["React","Node.js","Firebase","AWS","JavaScript","API Creation"]}/>
         <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Participated in the Lab Accelerator as a software engineer for Fortus, where I contributed to building the frontend and backend of their gym app.
         </p>
@@ -135,6 +129,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           180 Degreen Consulting - Technology Consulting Director 
         </h3>
+        <Tags tags={["ML Fine tuning","Data Pipelines","Web Scraping","NLP"]}/>
         <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-20">
         Over the course of 1.5 years, I led 5 consulting projects and supervised over 40 individual consultants. I worked on implementing machine learning and other software solutions for industrial clients who ranged from energy companies to not-for-profits. 
         </p>
@@ -197,6 +192,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           UQ Winter Research
         </h3>
+        <Tags tags={["YoloV8","MatplotLib","Pytorch","DeepSORT"]}/>
         <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
           Participated in the UQ Winter Research Program under Dr. Miao Xu. Fine-tuned YOLOv8 for object detection and added additional blocks for object tracking. The goal of this project was to quantify the game state for League of Legends and develop a reinforcement learning model to play the game.
         </p>
@@ -210,6 +206,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           UQ Validate Accelerator 
         </h3>
+        <Tags tags={["Figma","Object Clasification","NLP"]}/>
         <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Was one of 10 winners who received funding in UQ’s startup program. I pitched and prototyped a SaaS job interview tool that integrated ChatGPT APIs and image detection models.
         </p>
@@ -223,6 +220,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Placed Top 1% in IMC Prosperity Globally
         </h3>
+        <Tags tags={["MatplotLib","Pytorch","Statistics Libraries","Financial Backtesting"]}/>
         <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-0">
           My team and I placed in the top 1% out of 13,000 students globally in the IMC Annual Trading Challenge. In this challenge, we analyzed market data from a wide range of agents and products to curate profitable trading strategies.
         </p>
@@ -265,6 +263,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Exit MyIBTutor
         </h3>
+        <Tags tags={["Leadership","Accounting"]}/>
         <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Decided to exit MyIBTutor to direct more attention toward technology and machine learning. Over the year, my co-founder and I grew the team to over 30 tutors and taught more than 300 concurrent students. We also partnered with several schools across Queensland to deliver workshops on pedagogy and time management.
         </p>
