@@ -10,7 +10,7 @@ import Header from "@/components/ui/header";
 import { useRouter } from 'next/navigation';
 
 const Spacer = ({ height = "100px" }: { height?: string }) => {
-  return <div style={{ height }} />;
+  return <div style={{ height }} className="bg-neutral-900" />;
 };
 
 
@@ -85,7 +85,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Fortus - Software Engineer
         </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+        <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Participated in the Lab Accelerator as a software engineer for Fortus, where I contributed to building the frontend and backend of their gym app.
         </p>
         <div className="grid grid-cols-2 mt-0">
@@ -127,7 +127,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           180 Degreen Consulting - Technology Consulting Director 
         </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-20">
+        <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-20">
         Over the course of 1.5 years, I led 5 consulting projects and supervised over 40 individual consultants. I worked on implementing machine learning and other software solutions for industrial clients who ranged from energy companies to not-for-profits. 
         </p>
         <div className="grid grid-cols-2 justify-start mt-5">
@@ -166,14 +166,14 @@ const data = [
             <Image
               src="/International_Justice_Mission_Logo_2015.png"
               alt="startup template"
-              width={110}
+              width={100}
               height={300}
               className="h-10 md:h-40 mr-0 lg:h-55 w-30 mb-5"
             />
             <Image
               src="/naturefreedom logo.png"
               alt="startup template"
-              width={370}
+              width={350}
               height={120}
               className="mt-5 h-10 md:h-20 lg:h-30 w-60"
             />
@@ -189,7 +189,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           UQ Winter Research
         </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+        <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
           Participated in the UQ Winter Research Program under Dr. Miao Xu. Fine-tuned YOLOv8 for object detection and added additional blocks for object tracking. The goal of this project was to quantify the game state for League of Legends and develop a reinforcement learning model to play the game.
         </p>
       </div>
@@ -202,7 +202,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           UQ Validate Accelerator 
         </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+        <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Was one of 10 winners who received funding in UQ’s startup program. I pitched and prototyped a SaaS job interview tool that integrated ChatGPT APIs and image detection models.
         </p>
       </div>
@@ -215,10 +215,10 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Placed Top 1% in IMC Prosperity Globally
         </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-0">
+        <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-0">
           My team and I placed in the top 1% out of 13,000 students globally in the IMC Annual Trading Challenge. In this challenge, we analyzed market data from a wide range of agents and products to curate profitable trading strategies.
         </p>
-        <div className="grid grid-cols-2 mt-0">
+        <div className="grid grid-cols-2 mt-10">
           <PinContainer
             title="GitHub Repository"
             href="https://github.com/maxtownson/IMC_Prosperity_2"
@@ -257,7 +257,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Exit MyIBTutor
         </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+        <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Decided to exit MyIBTutor to direct more attention toward technology and machine learning. Over the year, my co-founder and I grew the team to over 30 tutors and taught more than 300 concurrent students. We also partnered with several schools across Queensland to deliver workshops on pedagogy and time management.
         </p>
         <div className="grid grid-cols-2 gap-4">
@@ -286,7 +286,7 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Co-founded MyIBTutor 
         </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
+        <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Co-founded MyIBTutor, a tutoring agency specializing in services for International Baccalaureate (IB) students. We delivered lectures at QASMT and grew the team into a small group of dedicated tutors.
         </p>
         <div className="grid grid-cols-2 gap-4">
@@ -338,7 +338,7 @@ export default function Home() {
       router.push('/contact');
   };
   return (
-    <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center antialiased">
+    <div className="min-h-screen w-full bg-neutral-900 relative flex flex-col items-center antialiased">
       <BackgroundBeams className="z-0" />
       <Header />
       {/* Main Content with higher z-index */}
@@ -394,7 +394,7 @@ export default function Home() {
               <AnimatedTooltip items={cs} />
               <AnimatedTooltip items={maths} />
             </div>
-              <p className="ml-11 text-lg text-gray-500 font-sans font-medium max-w-xl mb-10">
+              <p className="ml-11 text-lg text-gray-300 font-sans font-medium max-w-xl mb-10">
                 Hi! I am Amlan Nag, a Machine Learning and Statistics student who
                 is passionate about robotics, quantitative finance, and research.
                 I am always looking to build new, cool things. Please reach out if
@@ -403,7 +403,7 @@ export default function Home() {
               <div>
               <Button
                 borderRadius="1.75rem"
-                className="bg-grey dark:bg-slate-900 text-white font-bold border-neutral-800 dark:border-slate-900"
+                className="bg-grey dark:bg-slate-900 text-white font-bold border-neutral-700 dark:border-slate-900"
                 onClick={handleContactClick}
               >
                 Contact Me!
@@ -417,7 +417,7 @@ export default function Home() {
       <div className="w-full">
         <Timeline data={data} />
       </div>
-      <Spacer height="200px" />
+        <Spacer height="200px" />
     </div>
   );
 }
