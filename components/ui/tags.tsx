@@ -6,7 +6,7 @@ interface TagsProps {
 
 const Tags: React.FC<TagsProps> = ({ tags }) => {
   return (
-    <div className="flex gap-2 mb-5">
+    <div className="flex flex-wrap gap-2 mb-5">
       {tags.map((tag, index) => (
         <span
           key={index}

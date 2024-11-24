@@ -2,7 +2,6 @@
 import React from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Image from "next/image";
-import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { Timeline } from "@/components/ui/timeline";
 import { Button } from "@/components/ui/moving-border";
 import Header from "@/components/ui/header";
@@ -10,7 +9,7 @@ import { useRouter } from "next/navigation";
 import data from "./experience";
 
 const Spacer = ({ height = "100px" }: { height?: string }) => {
-  return <div style={{ height }} className="bg-neutral-900" />;
+  return <div style={{ height }} className="bg-neutral-900 w-full" />;
 };
 
 const cs = [
@@ -39,23 +38,24 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-neutral-900 relative flex flex-col items-center antialiased">
+    <main className="min-h-screen w-screen overflow-x-hidden bg-neutral-900">
+      <div className="relative flex flex-col items-center w-full">
       <BackgroundBeams className="z-0" />
       <Header />
-      <div className="max-w-4xl mx-auto p-4 mt-10 md:mt-16 flex flex-col z-10 relative">
+        <div className="w-full max-w-4xl mx-auto px-4 mt-10 md:mt-16 flex flex-col z-10 relative">
         <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6 relative">
           {/* Profile Image */}
           <Image
             src="/pfp.jpg"
             alt="Amlan Nag"
-            width={200}
-            height={200}
-            className="object-cover rounded-full border-2 border-white"
+            width={150}
+            height={150}
+            className="object-cover rounded-full border-2 border-white md:w-[200px] md:h-[200px]"
           />
 
           {/* Profile Details */}
-          <div>
-            <h1 className="text-center md:text-left md:text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
+            <div className="text-center md:text-left w-full">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">
               Amlan Nag
             </h1>
             <div className="flex justify-center md:justify-start items-center space-x-6 mt-4">
@@ -69,7 +69,7 @@ export default function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-6 w-6 md:h-8 md:w-8"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -87,7 +87,7 @@ export default function Home() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8"
+                  className="h-6 w-6 md:h-8 md:w-8"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -95,12 +95,12 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <p className="text-center md:text-left text-lg text-gray-300 font-sans font-medium max-w-xl mt-6">
+            <p className="text-lg text-gray-300 font-sans font-medium max-w-xl mt-4 md:mt-6">
               Hi! I am Amlan Nag, a Machine Learning and Statistics student
               passionate about robotics, quantitative finance, and research.
               I love building new, exciting things—let's collaborate!
             </p>
-            <div className="mt-4">
+            <div className="mt-4 flex justify-center md:justify-start">
               <Button
                 borderRadius="1.75rem"
                 className="bg-grey text-white font-bold px-6 py-3"
@@ -118,5 +118,6 @@ export default function Home() {
       </div>
       <Spacer height="200px" />
     </div>
+    </main>
   );
 }
