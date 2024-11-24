@@ -5,15 +5,13 @@ import Header from "@/components/ui/header";
 import Image from 'next/image';
 import BlungeAI from "@/readmefiles/BlungeAI";
 import ADNI from "@/readmefiles/StyleGAn";
+import DeepLearningExperimentation from "@/readmefiles/Resnet"
+import JobFindingApp from "@/readmefiles/reactapp";
 
-const DummyContent = () => {
+const Website = () => {
   return (
-    <div
-    className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-  >
-   
     <a 
-      href="https://github.com/yourusername" 
+      href="https://github.com/amlannag/React-Native-App" 
       target="_blank" 
       rel="noopener noreferrer"
       className="block w-fit mx-auto mt-6"
@@ -22,9 +20,9 @@ const DummyContent = () => {
         View on GitHub
       </button>
     </a>
-  </div>
   );
 };
+
 
 
 
@@ -66,19 +64,19 @@ const data = [
     category: "Machine Learning",
     title: "ResNet and DCGAN training",
     src: "/cifar10.png",
-    content: <DummyContent />,
+    content: <DeepLearningExperimentation />,
   },
   {
     category: "App Developement",
     title: "React Native Job Searching App",
     src: "/react.png",
-    content: <DummyContent />,
+    content: <JobFindingApp />,
   },
   {
     category: "Web Developement",
     title: "Portfolio Website (This website)",
     src: "/currebtpage.png",
-    content: <DummyContent />,
+    content: <Website />,
   },
 ];
 
