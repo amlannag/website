@@ -6,7 +6,7 @@ import { Cover } from "@/components/ui/cover";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-neutral-900">
       <Header />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">

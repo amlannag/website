@@ -1,44 +1,97 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import Header from "@/components/ui/header";
+import Image from 'next/image';
+
+const DummyContent = () => {
+  return (
+    <>
+      {[...new Array(3).fill(1)].map((_, index) => {
+        return (
+          <div
+            key={"dummy-content" + index}
+            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+          >
+            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+              <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                The first rule of Apple club is that you boast about Apple club.
+              </span>{" "}
+              Keep a journal, quickly jot down a grocery list, and take amazing
+              class notes. Want to convert those notes to text? No problem.
+              Langotiya jeetu ka mara hua yaar is ready to capture every
+              thought.
+            </p>
+            <Image
+              src="/Fortus.png"
+              alt="Macbook mockup from Aceternity UI"
+              height="500"
+              width="500"
+              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            />
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+const data = [
+  {
+    category: "Machine Learning",
+    title: "Training StyleGAN from scratch on ADNI",
+    src: "/Fortus.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "Machine Learning",
+    title: "STOA Background Removal Finetuning",
+    src: "/Fortus.png",
+    content: <DummyContent />,
+
+  },
+  {
+    category: "Trading",
+    title: "IMC Prosperity Trading Challenge",
+    src: "/Fortus.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "Machine Learning",
+    title: "ResNet and DCGAN training",
+    src: "/Fortus.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "App Developement",
+    title: "React Native Job Searching App",
+    src: "/Fortus.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "Web Developement",
+    title: "Portfolio Website (This website)",
+    src: "/Fortus.png",
+    content: <DummyContent />,
+  },
+];
+
 
 export default function ProjectsPage() {
-  return (
-    <main className="min-h-screen bg-black">
-      <Header />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="space-y-8">
-          <div>
-            <h1 className="text-4xl font-bold text-white mb-4">Projects</h1>
-            <p className="text-xl text-gray-400">
-              Here are some of the projects I&apos;ve worked on.
-            </p>
-          </div>
+  const cards = data.map((card, index) => (
+    <Card key={card.src} card={card} index={index} />
+  ));
 
-          {/* Project Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Example Project Card - Repeat as needed */}
-            <div className="bg-neutral-900 rounded-lg overflow-hidden">
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  Project Name
-                </h3>
-                <p className="text-gray-400 mb-4">
-                  Brief description of the project and what technologies were used.
-                </p>
-                <div className="flex gap-2">
-                  <span className="px-3 py-1 bg-blue-500/10 text-blue-500 rounded-full text-sm">
-                    React
-                  </span>
-                  <span className="px-3 py-1 bg-green-500/10 text-green-500 rounded-full text-sm">
-                    Node.js
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  return (
+    <main className="min-h-screen bg-neutral-900">
+      <Header />
+      <div className="w-full h-full py-20">
+        <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto 
+            mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b 
+            from-neutral-100 via-neutral-400 to-neutral-700 white:from-neutral-300 white:via-dark white:to-dark">
+                Projects
+        </h1>
+        <Carousel items={cards} />
       </div>
     </main>
   );
