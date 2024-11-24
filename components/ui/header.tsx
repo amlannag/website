@@ -18,7 +18,9 @@ const Header: React.FC = () => {
           Projects
         </Link>
         <Link
-          href="/experience"
+          href="https://docs.google.com/document/d/1ruHhB0ZnI8nHMdBWYz_dLcfueFMK_n-7sLOLCvObH_0/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors font-bold"
         >
           Resume

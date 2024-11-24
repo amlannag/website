@@ -6,50 +6,14 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { Timeline } from "@/components/ui/timeline";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { Button } from "@/components/ui/moving-border";
-import Link from "next/link";
 import Header from "@/components/ui/header";
-
-const scrollToContact = () => {
-  const contactSection = document.getElementById('contact-section');
-    if (contactSection) {
-      contactSection.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-};
+import { useRouter } from 'next/navigation';
 
 const Spacer = ({ height = "100px" }: { height?: string }) => {
   return <div style={{ height }} />;
 };
 
-const handleContactClick = () => {
-  const contactSection = document.getElementById('contact-section');
-  if (!contactSection) return;
 
-  const startPosition = window.pageYOffset;
-  const targetPosition = contactSection.offsetTop;
-  const distance = targetPosition - startPosition;
-  const duration = 2000; // Duration in milliseconds (2 seconds - adjust this to change speed)
-  let start: number | null = null;
-
-  function animation(currentTime: number) {
-    if (start === null) start = currentTime;
-    const timeElapsed = currentTime - start;
-    const progress = Math.min(timeElapsed / duration, 1);
-
-    // Easing function for smoother animation
-    const ease = (t: number) => t * t * t; // Cubic easing
-
-    window.scrollTo(0, startPosition + distance * ease(progress));
-
-    if (timeElapsed < duration) {
-      requestAnimationFrame(animation);
-    }
-  }
-
-  requestAnimationFrame(animation);
-};
 
 const data = [
   {
@@ -96,7 +60,7 @@ const data = [
               </h3>
               <div className="text-base !m-0 !p-0 font-normal">
                 <span className="text-slate-500 ">
-                Currently developing a bipedal wheeled robot. The robot includes a LiDAR detector, an arm module, and a custom reinforcement learning model. Follow our journey!
+                Currently developing a bipedal wheeled robot. The robot includes a LiDAR detector, an arm module, and a custom reinforcement learning model. We are funded by BlackBird.
                 </span>
               </div>
               <div className=" w-full rounded-lg mt-4 ">
@@ -368,6 +332,11 @@ const maths = [
 ];
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleContactClick = () => {
+      router.push('/contact');
+  };
   return (
     <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center antialiased">
       <BackgroundBeams className="z-0" />
@@ -435,7 +404,7 @@ export default function Home() {
               <Button
                 borderRadius="1.75rem"
                 className="bg-grey dark:bg-slate-900 text-white font-bold border-neutral-800 dark:border-slate-900"
-                onClick={scrollToContact}
+                onClick={handleContactClick}
               >
                 Contact Me!
               </Button>
