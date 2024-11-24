@@ -85,6 +85,14 @@ const data = [
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
           Fortus - Software Engineer
         </h3>
+        <div className="flex gap-2 mb-5">
+          <span className="px-3 py-1 bg-blue-500/10 text-blue-500 rounded-full text-sm">
+            React
+          </span>
+          <span className="px-3 py-1 bg-green-500/10 text-green-500 rounded-full text-sm">
+            Node.js
+          </span>
+        </div>
         <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
         Participated in the Lab Accelerator as a software engineer for Fortus, where I contributed to building the frontend and backend of their gym app.
         </p>
