@@ -7,6 +7,7 @@ import { Timeline } from "@/components/ui/timeline";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { Button } from "@/components/ui/moving-border";
 import Link from "next/link";
+import Header from "@/components/ui/header";
 
 const scrollToContact = () => {
   const contactSection = document.getElementById('contact-section');
@@ -156,6 +157,68 @@ const data = [
     ),
   },
   {
+    title: "2024 Sept",
+    content: (
+      <div>
+        <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
+          180 Degreen Consulting - Technology Consulting Director 
+        </h3>
+        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-20">
+        Over the course of 1.5 years, I led 5 consulting projects and supervised over 40 individual consultants. I worked on implementing machine learning and other software solutions for industrial clients who ranged from energy companies to not-for-profits. 
+        </p>
+        <div className="grid grid-cols-2 justify-start mt-5">
+          <PinContainer
+            title="Blunge Background removal project"
+            href="https://github.com/amlannag/Blunge.AI-Background-Removal"
+            
+          >
+            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[24srem] ">
+              <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+                Blunge Background Removal 
+              </h3>
+              <div className="text-base !m-0 !p-0 font-normal">
+                <span className="text-slate-500 ">
+                  This project implements a STOA background removal pipeline for images through fine tuning segmentation models and hyper perameter fine tuning. It is also accompanied by a front end interface and tool kit.</span>
+              </div>
+              <div className=" w-full rounded-lg mt-4 ">
+                <Image
+                  src="/blungegif.gif"
+                  alt="startup template"
+                  width={400}
+                  height={400}
+                  className="rounded-lg  h-16 md:h-32 lg:h-40 w-full "
+                />
+              </div>
+            </div>
+          </PinContainer>
+          <div className="flex flex-col items-center justify-center">
+            <Image
+              src="/ARK Logo.png"
+              alt="startup template"
+              width={400}
+              height={400}
+              className="h-10 md:h-12 lg:h-20 w-90 mb-5"
+            />
+            <Image
+              src="/International_Justice_Mission_Logo_2015.png"
+              alt="startup template"
+              width={110}
+              height={300}
+              className="h-10 md:h-40 mr-0 lg:h-55 w-30 mb-5"
+            />
+            <Image
+              src="/naturefreedom logo.png"
+              alt="startup template"
+              width={370}
+              height={120}
+              className="mt-5 h-10 md:h-20 lg:h-30 w-60"
+            />
+          </div>      
+        </div>
+      </div>
+    ),
+  },
+  {
     title: "2024 June",
     content: (
       <div>
@@ -253,20 +316,6 @@ const data = [
     ),
   },
   {
-    title: "2023 Sept",
-    content: (
-      <div>
-        <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
-          Lead IJM Project as Team Leader
-        </h3>
-        <p className="text-neutral-500 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
-        Led a team of 10 consultants to deliver workflow and process mapping solutions for the International Justice Mission. Implemented software solutions to assist with process mapping.
-
-        </p>
-      </div>
-    ),
-  },
-  {
     title: "2023 Jan",
     content: (
       <div>
@@ -322,38 +371,7 @@ export default function Home() {
   return (
     <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center antialiased">
       <BackgroundBeams className="z-0" />
-
-      {/* Header with higher z-index */}
-      <header className="w-full fixed top-0 left-0 flex justify-end p-4 z-50">
-        <nav className="flex space-x-6">
-          <Link
-            href="/"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
-          >
-            Home
-          </Link>
-          <Link
-            href="/projects"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
-          >
-            Projects
-          </Link>
-          <Link
-            href="/experience"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
-          >
-            Work Experience and Education
-          </Link>
-          <Link
-            href="/contact"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
-
-
+      <Header />
       {/* Main Content with higher z-index */}
       <div className="max-w-4xl mx-auto p-4 mt-16 flex flex-col z-10 relative">
         <div className="max-w-4xl flex items-start relative">

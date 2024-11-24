@@ -1,38 +1,12 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Header from "@/components/ui/header";
 
 export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-black">
-      <header className="w-full fixed top-0 left-0 flex justify-end p-4 z-50">
-        <nav className="flex space-x-6">
-          <Link
-            href="/"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
-          >
-            Home
-          </Link>
-          <Link
-            href="/projects"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
-          >
-            Projects
-          </Link>
-          <Link
-            href="/experience"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
-          >
-            Experience
-          </Link>
-          <Link
-            href="/contact"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors"
-          >
-            Contact
-          </Link>
-        </nav>
-      </header>
+      <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="space-y-8">
           <div>
