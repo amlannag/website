@@ -1,4 +1,35 @@
+# Portfolio Website
+
+This represents my first full-scale website development project, serving as both a learning experience and a practical application of modern web technologies. The project was built from the ground up, incorporating various cutting-edge tools and frameworks to create a responsive and interactive web experience.
+
+## Tech Stack
+
+### Frontend Framework
+- **Next.js 14**: React framework with server-side rendering and routing.
+- **React 18**: UI library for building component-based interfaces.
+- **TypeScript**: For type-safe JavaScript development.
+
+### Styling
+- **Tailwind CSS**: Utility-first CSS framework.
+- **Framer Motion**: For smooth animations and transitions.
+- **Shadcn UI**: For reusable UI components.
+
+### Development Tools
+- **ESLint**: For code linting and maintaining code quality.
+- **PostCSS**: For processing CSS with JavaScript.
+- **npm**: Package management.
+
+### Deployment & Hosting
+- **Vercel**: For hosting and automatic deployments.
+- **Git**: Version control.
+
+## Live Preview
+You can view the live site [here](https://www.amlannag.com/).
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
 
 ## Getting Started
 

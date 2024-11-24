@@ -7,23 +7,7 @@ import BlungeAI from "@/readmefiles/BlungeAI";
 import ADNI from "@/readmefiles/StyleGAn";
 import DeepLearningExperimentation from "@/readmefiles/Resnet"
 import JobFindingApp from "@/readmefiles/reactapp";
-
-const Website = () => {
-  return (
-    <a 
-      href="https://github.com/amlannag/React-Native-App" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="block w-fit mx-auto mt-6"
-    >
-      <button className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors">
-        View on GitHub
-      </button>
-    </a>
-  );
-};
-
-
+import PortfolioWebsite from "@/readmefiles/Portfolio";
 
 
 const IMC = () => {
@@ -76,7 +60,7 @@ const data = [
     category: "Web Developement",
     title: "Portfolio Website (This website)",
     src: "/currebtpage.png",
-    content: <Website />,
+    content: <PortfolioWebsite />,
   },
 ];
 
