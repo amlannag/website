@@ -20,12 +20,12 @@ export default function ContactPage() {
             <p className="text-3xl text-gray-400">
               Let&apos;s connect! Feel free to reach out for opportunities or just to say hello.
             </p>
-            <p className="text-2xl text-gray-400 mt-5">
+            {/* <p className="text-2xl text-gray-400 mt-5">
               amlannag12@gmail.com
-            </p>
-            <p className="text-2xl text-gray-400 mt-5">
+            </p> */}
+            {/* <p className="text-2xl text-gray-400 mt-5">
               +61 480 123 226
-            </p>
+            </p> */}
             <div className="flex items-center justify-center space-x-6 mt-5">
                 {/* LinkedIn Icon */}
                 <a

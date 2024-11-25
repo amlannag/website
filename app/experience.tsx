@@ -75,7 +75,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
           Participated in the Lab Accelerator as a software engineer for Fortus, where I contributed to building the frontend and backend of their gym app.
           </p>
-          <div className="grid grid-cols-2 mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-start">
             <PinContainer
               title="Fortus App"
               href="https://www.fortus.fit/"
@@ -118,7 +118,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-20">
           Over the course of 1.5 years, I led 5 consulting projects and supervised over 40 individual consultants. I worked on implementing machine learning and other software solutions for industrial clients who ranged from energy companies to not-for-profits. 
           </p>
-          <div className="grid grid-cols-2 justify-start mt-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-start">
             <PinContainer
               title="Blunge Background removal project"
               href="https://github.com/amlannag/Blunge.AI-Background-Removal"
@@ -209,7 +209,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-0">
             My team and I placed in the top 1% out of 13,000 students globally in the IMC Annual Trading Challenge. In this challenge, we analyzed market data from a wide range of agents and products to curate profitable trading strategies.
           </p>
-          <div className="grid grid-cols-2 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-start">
             <PinContainer
               title="GitHub Repository"
               href="https://github.com/maxtownson/IMC_Prosperity_2"
@@ -252,7 +252,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
           Decided to exit MyIBTutor to direct more attention toward technology and machine learning. Over the year, my co-founder and I grew the team to over 30 tutors and taught more than 300 concurrent students. We also partnered with several schools across Queensland to deliver workshops on pedagogy and time management.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-start">
               <Image
                 src="/1710899712049.jpeg"
                 alt="startup template"
@@ -281,7 +281,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-xs md:text-xl font-normal mb-8">
           Co-founded MyIBTutor, a tutoring agency specializing in services for International Baccalaureate (IB) students. We delivered lectures at QASMT and grew the team into a small group of dedicated tutors.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 justify-start">
               <Image
                 src="/46070_MyIBTutor_logo_BJ-01.png"
                 alt="startup template"

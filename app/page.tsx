@@ -98,7 +98,7 @@ export default function Home() {
             <p className="text-lg text-gray-300 font-sans font-medium max-w-xl mt-4 md:mt-6">
               Hi! I am Amlan Nag, a Machine Learning and Statistics student
               passionate about robotics, quantitative finance, and research.
-              I love building new, exciting things—let's collaborate!
+              I love building new, exciting things—let&apos;s collaborate!
             </p>
             <div className="mt-4 flex justify-center md:justify-start">
               <Button
