@@ -54,9 +54,8 @@ export const PinContainer = ({
     <Link
       className={cn(
         "relative group/pin z-50 cursor-pointer",
-        // Responsive width and display
-        "w-full max-w-md mx-auto", 
-        "sm:max-w-xl swap:max-w-2xl lg:max-w-4xl",
+        "md:max-w-[20rem]",
+        "sm:max-w-xl swap:max-w-2xl lg:max-w-4xl mx-auto",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}

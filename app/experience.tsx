@@ -10,7 +10,7 @@ const data = [
           <h3 className="text-lg md:text-2xl mb-10 text-white dark:text-white max-w-4xl font-bold">
             Blunge and Robotics
           </h3>
-          <div className="grid grid-cols-1 swap:grid-cols-2 justify-center items-center ">
+          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center mb-20">
           <PinContainer
               title="Blunge.ai"
               href="https://www.blunge.ai/" 
@@ -30,7 +30,7 @@ const data = [
                     alt="startup template"
                     width={400}
                     height={400}
-                    className="rounded-lg  h-16 md:h-32 lg:h-40 w-full "
+                    className="rounded-lg h-32 lg:h-40 w-full "
                   />
                 </div>
               </div>
@@ -40,7 +40,7 @@ const data = [
               href="https://x.com/blankrobotics"
               
             >
-              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[17rem] h-[22rem]  md:w-[20rem] lg:w-[20rem]  ">
+              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[22rem] lg:w-[20rem]  ">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                   Bipedal Wheeled Robot
                 </h3>
@@ -55,7 +55,7 @@ const data = [
                     alt="startup template"
                     width={600}
                     height={400}
-                    className="rounded-lg  h-16 md:h-32 lg:h-40 w-full "
+                    className="rounded-lg  h-32 lg:h-40 w-full "
                   />
                 </div>
               </div>
@@ -75,7 +75,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
           Participated in the Lab Accelerator as a software engineer for Fortus, where I contributed to building the frontend and backend of their gym app.
           </p>
-          <div className="grid grid-cols-1 swap:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center ">
             <PinContainer
               title="Fortus App"
               href="https://www.fortus.fit/"
@@ -118,7 +118,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
           Over the course of 1.5 years, I led 5 consulting projects and supervised over 40 individual consultants. I worked on implementing machine learning and other software solutions for industrial clients who ranged from energy companies to not-for-profits. 
           </p>
-          <div className="grid grid-cols-1 swap:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 justify-center items-center ">
             <PinContainer
               title="Blunge Background removal project"
               href="https://github.com/amlannag/Blunge.AI-Background-Removal"
@@ -209,7 +209,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
             My team and I placed in the top 1% out of 13,000 students globally in the IMC Annual Trading Challenge. In this challenge, we analyzed market data from a wide range of agents and products to curate profitable trading strategies.
           </p>
-          <div className="grid grid-cols-1 swap:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 justify-center items-center ">
             <PinContainer
               title="GitHub Repository"
               href="https://github.com/maxtownson/IMC_Prosperity_2"

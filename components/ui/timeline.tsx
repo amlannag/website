@@ -50,7 +50,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           {data.map((item, index) => (
             <div
               key={index}
-              className="flex justify-start pt-10 swap:pt-40 swap:gap-10"
+              className="flex justify-start pt-10 md:pt-10 swap:pt-40 gap-6 swap:gap-10"
             >
               <div className="sticky flex flex-col swap:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm swap:w-full">
                 <div className="h-10 absolute left-3 swap:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
