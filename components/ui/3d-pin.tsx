@@ -17,7 +17,7 @@ export const PinContainer = ({
   className?: string;
   containerClassName?: string;
 }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true);
   const [transform, setTransform] = useState(
     "translate(-50%,-50%) rotateX(0deg)"
   );
@@ -25,7 +25,7 @@ export const PinContainer = ({
   // Check screen size and update responsiveness
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsDesktop(window.innerWidth >= 1000);
     };
 
     // Check on initial render
@@ -39,13 +39,13 @@ export const PinContainer = ({
   }, []);
 
   const onMouseEnter = () => {
-    if (!isMobile) {
+    if (isDesktop) {
       setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.8)");
     }
   };
   
   const onMouseLeave = () => {
-    if (!isMobile) {
+    if (isDesktop) {
       setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
     }
   };
@@ -53,17 +53,15 @@ export const PinContainer = ({
   return (
     <Link
       className={cn(
-        "relative group/pin z-50 cursor-pointer",
-        "md:max-w-[20rem]",
-        "sm:max-w-xl swap:max-w-2xl lg:max-w-4xl mx-auto",
+        "relative group/pin z-50 cursor-pointer mx-auto",
+        "w-full max-w-[23rem]", 
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       href={href || "/"}
     >
-      {/* Desktop version with perspective */}
-      {!isMobile && (
+      {isDesktop ? (
         <>
           <div>
             <div
@@ -86,12 +84,9 @@ export const PinContainer = ({
           
           <PinPerspective title={title} href={href} />
         </>
-      )}
-
-      {/* Mobile/Responsive version - simplified static card */}
-      {isMobile && (
-        <div className="w-full p-4">
-          <div className="relative sm:max-w-xl rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black border border-white/[0.1] overflow-hidden">
+      ) : (
+        <div className="w-full">
+          <div className="relative rounded-2xl shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black border border-white/[0.1] p-4 overflow-hidden">
             <div className={cn("relative z-50", className)}>{children}</div>
           </div>
         </div>
@@ -132,7 +127,6 @@ export const PinPerspective = ({
           }}
           className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
         >
-          {/* Pulse animations - kept as in original */}
           <>
             {[0, 2, 4].map((delay) => (
               <motion.div
@@ -158,7 +152,6 @@ export const PinPerspective = ({
             ))}
           </>
 
-          {/* Vertical lines - kept as in original */}
           <>
             <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-cyan-500 translate-y-[14px] w-px h-20 group-hover/pin:h-40 blur-[2px]" />
             <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-cyan-500 translate-y-[14px] w-px h-20 group-hover/pin:h-40" />

@@ -10,7 +10,7 @@ const data = [
           <h3 className="text-lg md:text-2xl mb-10 text-white dark:text-white max-w-4xl font-bold">
             Blunge and Robotics
           </h3>
-          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center mb-20">
+          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8 ">
           <PinContainer
               title="Blunge.ai"
               href="https://www.blunge.ai/" 
@@ -19,8 +19,8 @@ const data = [
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                   Machine Learning Engineer 
                 </h3>
-                <div className="text-base !p-0 font-normal md:ml-0">
-                  <span className="text-slate-500 ">
+                <div className="text-base !p-0 font-normal">
+                  <span className="text-slate-500 w-full ">
                   Working as a Machine Learning Engineer and researcher at Blunge, where I am developing image-to-video generation capabilities for their fine-tuned Stable Diffusion models.
                   </span>
                 </div>
@@ -30,7 +30,7 @@ const data = [
                     alt="startup template"
                     width={400}
                     height={400}
-                    className="rounded-lg h-32 lg:h-40 w-full "
+                    className="rounded-lg h-40 "
                   />
                 </div>
               </div>
@@ -55,7 +55,7 @@ const data = [
                     alt="startup template"
                     width={600}
                     height={400}
-                    className="rounded-lg  h-32 lg:h-40 w-full "
+                    className="rounded-lg h-40 w-full "
                   />
                 </div>
               </div>
@@ -72,25 +72,25 @@ const data = [
             Fortus - Software Engineer
           </h3>
           <Tags tags={["React","Node.js","Firebase","AWS","JavaScript","API Creation"]}/>
-          <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
+          <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal">
           Participated in the Lab Accelerator as a software engineer for Fortus, where I contributed to building the frontend and backend of their gym app.
           </p>
-          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center ">
+          <div className="grid grid-cols-1 mt-10 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8 ">
             <PinContainer
               title="Fortus App"
               href="https://www.fortus.fit/"
             >
-              <div className="flex flex-col justify-center items-center sm:items-start sm:justify-start md:p-3 p-2 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] md:h-[15rem] h-[13rem]">
+              <div className="flex flex-col justify-center items-center md:p-3 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] md:h-[15rem] h-[13rem]">
                 <h3 className="md:max-w-xs max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100 text-center sm:text-left">
                   Fortus App
                 </h3>
-                <div className="md:w-full rounded-lg md:mt-4 mt-2 mr-4">
+                <div className="md:w-full rounded-lg md:mt-4 mt-2">
                   <Image
                     src="/Fortus.png"
                     alt="startup template"
                     width={400}
                     height={400}
-                    className="rounded-lg h-30 w-60 md:h-32 lg:h-40 md:w-full"
+                    className="rounded-lg rounded-lg h-40 w-full"
                   />
                 </div>
               </div>
@@ -99,9 +99,9 @@ const data = [
                 src="/IMG_8240.jpg"
                 alt="startup template"
                 width={400}
-                height={400}
-                className="rounded-lg object-cover h-auto md:h-44 md:mt-10 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
+                height={300}
+                className="rounded-lg mx-auto object-cover h-60 w-100"
+            />
           </div>
         </div>
         
@@ -118,13 +118,13 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
           Over the course of 1.5 years, I led 5 consulting projects and supervised over 40 individual consultants. I worked on implementing machine learning and other software solutions for industrial clients who ranged from energy companies to not-for-profits. 
           </p>
-          <div className="grid grid-cols-2 justify-center items-center ">
+          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8 ">
             <PinContainer
               title="Blunge Background removal project"
               href="https://github.com/amlannag/Blunge.AI-Background-Removal"
               
             >
-              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[24srem] ">
+              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[24rem] ">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                   Blunge Background Removal 
                 </h3>
@@ -138,32 +138,18 @@ const data = [
                     alt="startup template"
                     width={400}
                     height={400}
-                    className="rounded-lg  h-auto md:h-32 lg:h-40 w-full "
+                    className="rounded-lg  rounded-lg h-40 w-full "
                   />
                 </div>
               </div>
             </PinContainer>
             <div className="flex flex-col items-center justify-center">
               <Image
-                src="/ARK Logo.png"
+                src="/New Project (2).png"
                 alt="startup template"
                 width={400}
                 height={400}
-                className="h-15 md:h-12 lg:h-20 w-90 mb-5"
-              />
-              <Image
-                src="/International_Justice_Mission_Logo_2015.png"
-                alt="startup template"
-                width={100}
-                height={300}
-                className="h-30 md:h-40 mr-0 lg:h-55 w-30 mb-5"
-              />
-              <Image
-                src="/naturefreedom logo.png"
-                alt="startup template"
-                width={350}
-                height={120}
-                className="mt-5 h-15 md:h-20 lg:h-30 w-60"
+                className="rounded-lg mx-auto object-cover h-100 w-100"
               />
             </div>      
           </div>
@@ -209,7 +195,7 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
             My team and I placed in the top 1% out of 13,000 students globally in the IMC Annual Trading Challenge. In this challenge, we analyzed market data from a wide range of agents and products to curate profitable trading strategies.
           </p>
-          <div className="grid grid-cols-2 justify-center items-center ">
+          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-4 ">
             <PinContainer
               title="GitHub Repository"
               href="https://github.com/maxtownson/IMC_Prosperity_2"
@@ -224,7 +210,7 @@ const data = [
                   alt="startup template"
                   width={400}
                   height={400}
-                  className="rounded-lg h-30 w-60 md:h-32 lg:h-40 md:w-full md:mr-0 md:mb-0 mr-3 mb-5"
+                  className="rounded-lg h-40 w-full"
                 />
               </div>
             </div>
@@ -233,9 +219,8 @@ const data = [
                 src="/tdfinal.png"
                 alt="startup template"
                 width={400}
-                height={400}
-                className="rounded-lg object-cover h-50 md:h-44 mt-11 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
+                height={300}
+                className="rounded-lg  mx-auto item-center object-cover h-full w-full"/>
           </div>
         </div>
         
@@ -252,21 +237,19 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
           Decided to exit MyIBTutor to direct more attention toward technology and machine learning. Over the year, my co-founder and I grew the team to over 30 tutors and taught more than 300 concurrent students. We also partnered with several schools across Queensland to deliver workshops on pedagogy and time management.
           </p>
-          <div className="grid grid-cols-1 swap:grid-cols-2 justify-start gap-[20px]">
+          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8">
                 <Image
                   src="/1710899712049.jpeg"
                   alt="startup template"
                   width={400}
-                  height={400}
-                  className="rounded-lg object-cover w-30 lg:w-full md:w-full h-auto md:h-44 lg:h-60 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
+                height={300}
+                className="rounded-lg mx-auto object-cover h-60 w-100"/>
                 <Image
                   src="/1710899761892.jpeg"
                   alt="startup template"
                   width={400}
-                  height={400}
-                  className="rounded-lg object-cover w-full h-auto md:h-44 lg:h-60 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
+                  height={300}
+                  className="rounded-lg mx-auto object-cover h-60 w-100"/>
               </div>
         </div>
       ),
@@ -281,21 +264,20 @@ const data = [
           <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
           Co-founded MyIBTutor, a tutoring agency specializing in services for International Baccalaureate (IB) students. We delivered lectures at QASMT and grew the team into a small group of dedicated tutors.
           </p>
-          <div className="grid grid-cols-1 swap:grid-cols-2 justify-start gap-[20px]">
+          <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center gap-[20px]">
               <Image
                 src="/46070_MyIBTutor_logo_BJ-01.png"
                 alt="startup template"
                 width={400}
                 height={400}
-                className="rounded-lg object-contain h-16 md:h-32 lg:h-40 w-full "
+                className="rounded-lg mx-auto object-contain h-16 md:h-32 lg:h-40 w-full "
               />
               <Image
                 src="/first lecture 1.png"
                 alt="startup template"
                 width={400}
-                height={400}
-                className="rounded-lg object-cover h-auto md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              />
+                height={300}
+                className="rounded-lg mx-auto object-cover h-60 w-100"/>
               
             </div>
         </div>
