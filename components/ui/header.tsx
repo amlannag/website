@@ -1,15 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // Tracks header visibility
+  const [lastScrollY, setLastScrollY] = useState(0); // Tracks the last scroll position
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
+  // Handle scroll to show/hide header
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      // Scroll down and hide header
+      setIsVisible(false);
+    } else {
+      // Scroll up and show header
+      setIsVisible(true);
+    }
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="w-full fixed top-0 z-[99] left-0 bg-neutral-900 shadow-md ">
+    <header
+      className={`w-full fixed top-0 z-[99] left-0 bg-neutral-900 shadow-md transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="flex justify-between items-center p-4">
         {/* Logo */}
         <div className="text-neutral-200 font-bold text-lg">
@@ -33,7 +59,11 @@ const Header: React.FC = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d={
+                isMenuOpen
+                  ? "M6 18L18 6M6 6l12 12"
+                  : "M4 6h16M4 12h16M4 18h16"
+              }
             />
           </svg>
         </button>
@@ -52,14 +82,6 @@ const Header: React.FC = () => {
           >
             Projects
           </Link>
-          {/* <Link
-            href="https://docs.google.com/document/d/1ruHhB0ZnI8nHMdBWYz_dLcfueFMK_n-7sLOLCvObH_0/edit?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors font-bold"
-          >
-            Resume
-          </Link> */}
           <Link
             href="/contact"
             className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors font-bold"
@@ -87,15 +109,6 @@ const Header: React.FC = () => {
             >
               Projects
             </Link>
-            {/* <Link
-              href="https://docs.google.com/document/d/1ruHhB0ZnI8nHMdBWYz_dLcfueFMK_n-7sLOLCvObH_0/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors font-bold"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Resume
-            </Link> */}
             <Link
               href="/contact"
               className="text-neutral-200 hover:text-neutral-400 cursor-pointer transition-colors font-bold"

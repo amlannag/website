@@ -32,7 +32,6 @@ const math = [
   },
 ];
 
-// ... (previous imports and components remain the same)
 export default function Home() {
   const router = useRouter();
 
@@ -121,11 +120,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="w-full">
         <Timeline data={data} />
       </div>
-      <Spacer height="200px" />
+      <Spacer height="50px" />
     </div>
     </main>
   );

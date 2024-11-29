@@ -12,7 +12,7 @@ const IMC = () => {
   return (
     <div className="text-center mt-6">
       <p className="text-lg mb-4">
-        My team and I placed in the top 1% out of 13,000 students globally in the IMC Annual Trading Challenge. In this challenge, we analyzed market data from a wide range of agents and products to curate profitable trading strategies.
+        My team and I placed in the top 1% out of 13,000 students globally in the IMC Annual Trading Challenge. In this challenge, we analyzed market data from a wide range of agents and products to create profitable trading strategies.
       </p>
       <a
         href="https://github.com/maxtownson/IMC_Prosperity_2"
@@ -37,7 +37,7 @@ const data = [
   },
   {
     category: "Machine Learning",
-    title: "STOA Background Removal Finetuning",
+    title: "State-of-the-Art Background Removal Finetuning",
     src: "/bgremoval.png",
     content: <BlungeAI />,
   },
@@ -49,18 +49,18 @@ const data = [
   },
   {
     category: "Machine Learning",
-    title: "ResNet and DCGAN training",
+    title: "ResNet and DCGAN Training",
     src: "/cifar10.png",
     content: <DeepLearningExperimentation />,
   },
   {
-    category: "App Developement",
+    category: "App Development",
     title: "React Native Job Searching App",
     src: "/react.png",
     content: <JobFindingApp />,
   },
   {
-    category: "Web Developement",
+    category: "Web Development",
     title: "Portfolio Website (This website)",
     src: "/currebtpage.png",
     content: <PortfolioWebsite />,
