@@ -34,6 +34,9 @@ const config: Config = {
       },
     },
     extend: {
+      screens: {
+        swap: "1238px", 
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="w-full fixed top-0 left-0 bg-neutral-900 shadow-md z-50">
+    <header className="w-full fixed top-0 z-[99] left-0 bg-neutral-900 shadow-md ">
       <div className="flex justify-between items-center p-4">
         {/* Logo */}
         <div className="text-neutral-200 font-bold text-lg">
