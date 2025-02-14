@@ -32,6 +32,16 @@ const math = [
   },
 ];
 
+const hku = [
+  {
+    id: 1,
+    name: "University Of Hong Kong",
+    designation: "Exchange: Studying ML and Mathematics research",
+    image: "/hku-shield-logo.jpg",
+  },
+];
+
+
 export default function Home() {
   const router = useRouter();
 
@@ -98,7 +108,8 @@ export default function Home() {
                 </div>
                 <div className="hidden sm:flex ">
                   <AnimatedTooltip items={cs} />
-                  <AnimatedTooltip items={math} />   
+                  <AnimatedTooltip items={math} /> 
+                  <AnimatedTooltip items={hku} />   
                 </div>
             </div>
             <div className="mx-auto flex items-center justify-center md:block">

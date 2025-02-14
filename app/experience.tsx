@@ -8,25 +8,25 @@ const data = [
     content: (
       <div>
         <h3 className="text-lg md:text-2xl mb-10 text-white dark:text-white max-w-4xl font-bold">
-          Blunge and Robotics
+          Symbolic Engine and Robotics
         </h3>
         <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8 ">
         <PinContainer
-            title="Blunge.ai"
-            href="https://www.blunge.ai/" 
+            title="Symbolic Engine"
+            href="https://deepmind.google/discover/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/" 
           >
             <div className="p-4 text-slate-100/50 h-[22rem] w-[20rem] ">
               <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
-                Machine Learning Engineer 
+                Symbolic Engine
               </h3>
               <div className="text-base !p-0 font-normal">
                 <span className="text-slate-500 w-full ">
-                Working as a Machine Learning Engineer and researcher at Blunge, where I am developing image-to-video generation capabilities for their fine-tuned Stable Diffusion models.
+                 Working on improving Deepminds symbolic engine to solve euclidan geometry problems. Currently woking on open sourcing the synthetic geometry and proof generator.
                 </span>
               </div>
               <div className="rounded-lg mt-4 ">
                 <Image
-                  src="/guidence 9  steps 50.gif"
+                  src="/egeometry.png"
                   alt="startup template"
                   width={400}
                   height={400}
@@ -64,6 +64,78 @@ const data = [
     ),
   },
   {
+    title: "2025 Jan",
+    content: (
+      <div>
+        <h3 className="text-xl md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
+          NCP Scholarship 
+        </h3>
+        <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
+          I was awarded the prestigious New Colombo Scholarship, which provides students with the opportunity to participate in fully funded internships and exchange programs abroad. I am currently studying at HKU specializing in machine learning, mathematical research and quantitative finance!
+        </p>
+        <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center gap-[20px]">
+          <Image
+            src="/ncp-crest-vertical_34f5be00-2858-329f-8a84-8c2e02a511e5.jpg"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="rounded-lg mx-auto object-contain h-16 md:h-32 lg:h-60 w-full"
+          />
+          <Image
+            src="/IMG_9349-2.jpg"
+            alt="startup template"
+            width={400}
+            height={300}
+            className="rounded-lg mx-auto object-cover h-60 w-100"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "2024 Nov",
+    content: (
+      <div>
+        <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
+          Blunge - Machine Learning Engineer and Researcher
+        </h3>
+        <Tags tags={["Fly.io", "Docker", "Hugging Face", "ComfyUI"]} />
+        <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal">
+          Worked as a Machine Learning Engineer and researcher at Blunge, where I developed image-to-video generation capabilities for their fine-tuned Stable Diffusion models.
+          I also contributed to a variety of other projects, such as background removal, ComfyUI workflows, and backend integration. Additionally, I had the privilege of attending the HKSTP Techathon with Blunge in Hong Kong.
+        </p>
+        <div className="grid grid-cols-1 mt-5 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8">
+          <PinContainer
+            title="Blunge.ai"
+            href="https://www.blunge.ai/"
+          >
+            <div className="flex flex-col justify-center items-center md:p-3 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] md:h-[15rem] h-[13rem]">
+              <h3 className="md:max-w-xs max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100 text-center sm:text-left">
+                Blunge.AI
+              </h3>
+              <div className="w-full flex justify-center md:justify-start rounded-lg mt-3">
+                <Image
+                  src="/guidence 9  steps 50.gif"
+                  alt="startup template"
+                  width={400}
+                  height={400}
+                  className="rounded-lg h-40 w-full"
+                />
+              </div>
+            </div>
+          </PinContainer>
+          <Image
+              src="/blungeHKSTP.JPEG"
+              alt="startup template"
+              width={400}
+              height={300}
+              className="rounded-lg mx-auto object-cover h-60 w-100"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
     title: "2024 Aug",
     content: (
       <div>
@@ -83,7 +155,7 @@ const data = [
               <h3 className="md:max-w-xs max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100 text-center sm:text-left">
                 Fortus App
               </h3>
-              <div className="md:w-full rounded-lg md:mt-4 mt-2">
+              <div className="w-full flex justify-center md:justify-start rounded-lg mt-3">
                 <Image
                   src="/Fortus.png"
                   alt="startup template"
