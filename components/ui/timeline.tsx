@@ -56,10 +56,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-5 px-4 swap:px-8 lg:px-10">
         <h2 className="text-xl swap:text-4xl mb-4 text-white dark:text-white max-w-4xl font-bold">
-          Past experiences
+          Current Goals
         </h2>
-        <p className="text-neutral-300 dark:text-neutral-300 swap:text-3xl text-xl mb-0 swap:text-xl">
-          Here is a timeline of some of the cool things I have done recently. For more information on please visit my projects or resume.
+        <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal">
+          Currently, I am preparing for my upcoming role as a Quantitative Research Intern at IMC Trading. 
+          Alongside this, I am exploring research directions in: 
+          <br /> 
+          1. The Manifold Hypothesis — understanding the low-dimensional structures underlying high-dimensional data. 
+          <br /> 
+          2. Neural Network Circuits & Interpretability — dissecting how networks compute and how features emerge. 
+          <br />
+          Please contact me if you are interested in similar topics!!!
         </p>
       </div>
     

@@ -4,61 +4,27 @@ import Image from 'next/image';
 
 const data = [
   {
-    title: "Current",
+    title: "2025 May",
     content: (
       <div>
-        <h3 className="text-lg md:text-2xl mb-10 text-white dark:text-white max-w-4xl font-bold">
-          Symbolic Engine and Robotics
+        <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
+          PwC Data Science and Cyber Intern
         </h3>
-        <div className="grid grid-cols-1 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8 ">
-        <PinContainer
-            title="Symbolic Engine"
-            href="https://deepmind.google/discover/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/" 
-          >
-            <div className="p-4 text-slate-100/50 h-[22rem] w-[20rem] ">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
-                Symbolic Engine
-              </h3>
-              <div className="text-base !p-0 font-normal">
-                <span className="text-slate-500 w-full ">
-                 Working on improving Deepminds symbolic engine to solve euclidan geometry problems. Currently woking on open sourcing the synthetic geometry and proof generator.
-                </span>
-              </div>
-              <div className="rounded-lg mt-4 ">
-                <Image
-                  src="/egeometry.png"
-                  alt="startup template"
-                  width={400}
-                  height={400}
-                  className="rounded-lg h-40 "
-                />
-              </div>
+        <Tags tags={["Data Science Libs", "Docker", "Hugging Face", "ComfyUI"]} />
+        <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal">
+        I worked on a firm-wide data science project exploring how employees use internal LLM tools. Using NLP and statistical learning methods, such as Gaussian Mixture Models and hierarchical clustering, I analysed over 200,000 prompts to identify patterns in how people interacted with generative AI. The end result was a “ChatGPT Wrapped”-style dashboard that transformed raw usage data into engaging, interpretable insights for the entire firm.
+        I also spent time with the Cyber team, where I helped run NIST assessments for ASX-listed companies.
+        </p>
+          <div className="grid grid-cols-1 mt-5 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8">
+            <div className="bg-white rounded-lg mx-auto h-60 w-100 flex items-center justify-center">
+              <Image
+                src="/pwc_logo.png"
+                alt="startup template"
+                width={400}
+                height={300}
+                className="object-cover"
+              />
             </div>
-          </PinContainer>
-          <PinContainer
-            title="Blank Robotics"
-            href="https://x.com/blankrobotics"
-          >
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[22rem] lg:w-[20rem]">
-              <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
-                Bipedal Wheeled Robot
-              </h3>
-              <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500">
-                Currently developing a bipedal wheeled robot. The robot includes a LiDAR detector, an arm module, and a custom reinforcement learning model. We are funded by Blackbird.
-                </span>
-              </div>
-              <div className="w-full rounded-lg mt-4 ">
-                <Image
-                  src="/robot.png"
-                  alt="startup template"
-                  width={600}
-                  height={400}
-                  className="rounded-lg h-40 w-full "
-                />
-              </div>
-            </div>
-          </PinContainer>
         </div>
       </div>
     ),
@@ -97,7 +63,7 @@ const data = [
     content: (
       <div>
         <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
-          Blunge - Machine Learning Engineer and Researcher
+          Blunge - Machine Learning Engineer
         </h3>
         <Tags tags={["Fly.io", "Docker", "Hugging Face", "ComfyUI"]} />
         <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal">
@@ -236,20 +202,6 @@ const data = [
         <Tags tags={["YOLOv8", "Matplotlib", "PyTorch", "DeepSORT"]} />
         <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
           Participated in the UQ Winter Research Program under Dr. Miao Xu. Fine-tuned YOLOv8 for object detection and added additional blocks for object tracking. The goal of this project was to quantify the game state for League of Legends and develop a reinforcement learning model to play the game.
-        </p>
-      </div>
-    ),
-  },
-  {
-    title: "2024 May",
-    content: (
-      <div>
-        <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
-          UQ Validate Accelerator
-        </h3>
-        <Tags tags={["Figma", "Object Classification", "NLP"]} />
-        <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
-          Was one of 10 winners who received funding in UQ’s startup program. I pitched and prototyped a SaaS job interview tool that integrated ChatGPT APIs and image detection models.
         </p>
       </div>
     ),
