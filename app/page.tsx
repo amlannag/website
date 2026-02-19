@@ -115,7 +115,7 @@ export default function Home() {
             <div className="mx-auto flex items-center justify-center md:block">
               <p className="md:text-lg text-xl text-gray-300 font-sans md:text-left text-center font-medium max-w-xl mt-4 md:mt-6">
                 Hi! I am Amlan Nag, a Machine Learning and Statistics student
-                passionate about robotics, quantitative finance, and research.
+                passionate about quantitative finance, and ML research.
                 I love building new, exciting things—let&apos;s collaborate!
               </p>
             </div>
