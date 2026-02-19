@@ -59,14 +59,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Current Goals
         </h2>
         <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal">
-          Currently, I am preparing for my upcoming role as a Quantitative Research Intern at IMC Trading. 
-          Alongside this, I am exploring research directions in: 
-          <br /> 
-          1. The Manifold Hypothesis — understanding the low-dimensional structures underlying high-dimensional data. 
-          <br /> 
-          2. Neural Network Circuits & Interpretability — dissecting how networks compute and how features emerge. 
-          <br />
-          Please contact me if you are interested in similar topics!!!
+          Currently, I am working as a Research Assistant under Dr Shakes Chandra at UQ. In addition, I will be returning to IMC as a Graduate Quantitative Researcher on the D1 team.
+          My primary goal this year is to publish in a top-tier machine learning venue. If you are interested in discussing deep learning–based research topics, please feel free to reach out to me on LinkedIn.
         </p>
       </div>
     

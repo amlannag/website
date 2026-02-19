@@ -4,6 +4,48 @@ import Image from 'next/image';
 
 const data = [
   {
+    title: "2026 Feb",
+    content: (
+      <div>
+        <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
+          Research Assistant
+        </h3>
+        <Tags tags={["Research", "ML",]} />
+        <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal">
+        Currently working as a research assistant under Dr Shakes Chandra, researching deeplearning and frequency domain representations for MRI applications.
+        </p>
+      </div>
+    ),
+  }
+  ,
+  {
+    title: "2025 November",
+    content: (
+      <div>
+        <h3 className="text-lg md:text-2xl mb-4 text-white dark:text-white max-w-4xl font-bold">
+          IMC Quantitative Research Intern
+        </h3>
+        <Tags tags={["Python", "ML",]} />
+        <p className="text-neutral-400 dark:text-neutral-200 text-lg md:text-xl font-normal">
+        Worked in the delta 1 team as a quantitative research intern. I primarity focused on creating MLP architectures for equity return predictions in the MFT space. 
+
+        </p>
+          <div className="grid grid-cols-1 mt-5 switch1:grid-cols-2 justify-center items-center switch1:mb-10 gap-y-8">
+            <div className="bg-white rounded-lg mx-auto h-60 w-100 flex items-center justify-center">
+              <Image
+                src="/imc-vector-logo.png"
+                alt="startup template"
+                width={400}
+                height={300}
+                className="object-cover"
+              />
+            </div>
+        </div>
+      </div>
+    ),
+  }
+  ,
+  {
     title: "2025 May",
     content: (
       <div>
